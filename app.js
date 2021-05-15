@@ -2,7 +2,6 @@
 // then display: block, when clicked again, display: none;
 
 //event listener text to use in order: 
-
 //You can invite up to 2 additional users on the Free plan. There is no limit on 
 //team members for the Premium plan.
 

@@ -28,26 +28,47 @@ body {
 }
 
 #FAQ-section #FAQ-card {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background: white;
   border-radius: 3%;
+  -webkit-box-shadow: 1px 5px 0px -10px black;
+          box-shadow: 1px 5px 0px -10px black;
+}
+
+#FAQ-section #FAQ-card #img-bg-pattern-container {
+  position: absolute;
+  overflow-y: hidden;
+  height: 100%;
+}
+
+#FAQ-section #FAQ-card #img-bg-pattern-container #img-bg-pattern {
+  width: 800px;
+  height: 900px;
+  -webkit-transform: translate(-55%, -32%);
+          transform: translate(-55%, -32%);
 }
 
 #FAQ-section #FAQ-card #left-side {
   position: relative;
+  margin-top: 3rem;
 }
 
-#FAQ-section #FAQ-card #left-side #img-woman {
+#FAQ-section #FAQ-card #left-side #img-woman-container {
+  overflow-x: hidden;
+}
+
+#FAQ-section #FAQ-card #left-side #img-woman-container #img-woman {
   -webkit-transform: translateX(-20%);
           transform: translateX(-20%);
 }
 
-#FAQ-section #FAQ-card #left-side #img-box {
+#FAQ-section #FAQ-card #left-side #img-box-container #img-box {
   position: absolute;
   z-index: 1;
-  top: 25%;
+  top: 30%;
   left: -20%;
 }
 
@@ -59,7 +80,8 @@ body {
 }
 
 #FAQ-section #FAQ-card #right-side #FAQ-header {
-  font-size: 2.6rem;
+  font-size: calc(2.6rem + 0.6vw);
+  margin-bottom: 20px;
 }
 
 #FAQ-section #FAQ-card #right-side ul {

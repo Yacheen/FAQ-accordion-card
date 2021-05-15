@@ -24,23 +24,44 @@ body {
   min-height: 100vh;
 
   #FAQ-card {
+    position: relative;
     display: flex;
     background: white;
     border-radius: 3%;
+    box-shadow: 1px 5px 0px -10px black;
+    #img-bg-pattern-container {
+      position: absolute;
+      overflow-y: hidden;
+      height: 100%;
+
+      #img-bg-pattern {
+        width: 800px;
+        height: 900px;
+        transform: translate(-55%, -32%);
+      }
+    }
 
     #left-side {
       position: relative;
+      margin-top: 3rem;
 
-      #img-woman {
-        transform: translateX(-20%);
+      #img-woman-container {
+        overflow-x: hidden;
+        #img-woman {
+          transform: translateX(-20%);
+        }
       }
-      #img-box {
-        position: absolute;
-        z-index: 1;
-        top: 25%;
-        left: -20%;
+
+      #img-box-container {
+        #img-box {
+          position: absolute;
+          z-index: 1;
+          top: 30%;
+          left: -20%;
+        }
       }
     }
+
     #right-side {
       margin-top: 6rem;
       margin-bottom: 6rem;
@@ -48,7 +69,8 @@ body {
       margin-left: 3rem;
 
       #FAQ-header {
-        font-size: 2.6rem;
+        font-size: calc(2.6rem + 0.6vw);
+        margin-bottom: 20px;
       }
       ul {
         list-style: none;
