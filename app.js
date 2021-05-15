@@ -14,3 +14,28 @@
 
 // Chat and email support is available 24/7. Phone lines are open during normal business hours.
 
+// create the li classlists, select the ul first maybe
+const faqQuestions = document.getElementById('FAQ-questions');
+
+const liItems = faqQuestions.children;
+console.log(liItems);
+
+Array.from(liItems).forEach((element, index) => {
+    
+    
+    //create a div with a class li-item-styles
+    const itemDiv = document.createElement('div');
+    itemDiv.classList.add('li-item-styles');
+
+    //add classes to the li's
+    element.classList.add('item');
+    element.classList.add(`item${index+1}`);
+
+    //create the dropdown menu buttons, and append them to the divs
+    const itemDropdownArrow = document.createElement('img');
+    itemDropdownArrow.classList.add('img-arrow-background');
+    itemDiv.appendChild(itemDropdownArrow);
+
+    console.log(itemDiv.children);
+
+});

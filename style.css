@@ -1,3 +1,16 @@
+.li-item-styles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.img-arrow-background {
+  background: url("./images/icon-arrow-down.svg");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -75,7 +88,7 @@ body {
 #FAQ-section #FAQ-card #right-side {
   margin-top: 6rem;
   margin-bottom: 6rem;
-  margin-right: 6rem;
+  margin-right: 10rem;
   margin-left: 3rem;
 }
 
