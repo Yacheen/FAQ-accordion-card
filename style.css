@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: linear-gradient(100deg, #af67e9, rgba(101, 101, 231, 0.5));
+}
+
+#FAQ-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
+#FAQ-section #FAQ-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: white;
+  border-radius: 3%;
+}
+
+#FAQ-section #FAQ-card #left-side {
+  position: relative;
+}
+
+#FAQ-section #FAQ-card #left-side #img-woman {
+  -webkit-transform: translateX(-20%);
+          transform: translateX(-20%);
+}
+
+#FAQ-section #FAQ-card #left-side #img-box {
+  position: absolute;
+  z-index: 1;
+  top: 25%;
+  left: -20%;
+}
+
+#FAQ-section #FAQ-card #right-side {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  margin-right: 6rem;
+  margin-left: 3rem;
+}
+
+#FAQ-section #FAQ-card #right-side #FAQ-header {
+  font-size: 2.6rem;
+}
+
+#FAQ-section #FAQ-card #right-side ul {
+  list-style: none;
+}
+
+#FAQ-section #FAQ-card #right-side ul li {
+  line-height: 6rem;
+  font-size: calc(1rem + 0.5vw);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+/*# sourceMappingURL=style.css.map */

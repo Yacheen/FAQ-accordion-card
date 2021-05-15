@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | FAQ Accordion Card</title>
 
@@ -15,22 +17,28 @@
   </style>
 </head>
 <body>
-  How many team members can I invite?
-  You can invite up to 2 additional users on the Free plan. There is no limit on 
-  team members for the Premium plan.
+  <section id="FAQ-section">
+    <div id="FAQ-card">
 
-  What is the maximum file upload size?
-  No more than 2GB. All files in your account must fit your allotted storage space.
+    <div id="left-side">
+      <img id="img-box" src="images/illustration-box-desktop.svg"/>
+      <img id="img-woman" src="images/illustration-woman-online-desktop.svg"/>
+    </div>
+  
+    <div id="right-side">
+      <h2 id="FAQ-header">FAQ</h2>
+      <ul id="FAQ-questions">
+        <li>How many team members can I invite?</li>
+        <li>What is the maximum file upload size?</li>
+        <li>How do I reset my password?</li>
+        <li>Can I cancel my subscription?</li>
+        <li>Can I cancel my subscription?</li>
+      </ul>
+    </div>
 
-  How do I reset my password?
-  Click “Forgot password” from the login page or “Change password” from your profile page.
-  A reset link will be emailed to you.
+  </section>
 
-  Can I cancel my subscription?
-  Yes! Send us a message and we’ll process your request no questions asked.
-
-  Do you provide additional support?
-  Chat and email support is available 24/7. Phone lines are open during normal business hours.
+</div>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
