@@ -78,9 +78,18 @@ body {
         list-style: none;
 
         li {
+          display: flex;
+          flex-wrap: wrap;
+          max-width: 500px;
+          align-items: center;
+
           line-height: 6rem;
           font-size: calc(1rem + 0.5vw);
           border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+          p {
+            line-height: 20px;
+            display: none;
+          }
         }
       }
     }

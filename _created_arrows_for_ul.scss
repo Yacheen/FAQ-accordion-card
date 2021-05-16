@@ -1,8 +1,15 @@
-.li-item-styles {
+.item {
   display: flex;
   justify-content: space-between;
+  object-fit: none;
+}
+li img {
+  height: 30px;
+  width: 30px;
+  margin-left: 10px;
+  padding: 8px;
 }
 
-.img-arrow-background {
-  background: url("./images/icon-arrow-down.svg");
+.list-item-active {
+  display: block;
 }
