@@ -8,7 +8,7 @@
   cursor: pointer;
 }
 
-.item:hover {
+.item:hover span {
   color: #f47c57;
 }
 
@@ -32,6 +32,84 @@ li img {
 .arrow-button-rotator {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+  -webkit-transition: all ease-in 0.2s;
+  transition: all ease-in 0.2s;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow: hidden;
+  }
+  #FAQ-card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 90vw;
+    max-height: 70vh;
+  }
+  #FAQ-card #img-bg-pattern-container {
+    height: 80px;
+    width: 170px;
+    top: -70%;
+    right: 60%;
+    border-radius: 8%;
+    -webkit-transform: rotate(-40deg);
+            transform: rotate(-40deg);
+    overflow: hidden;
+  }
+  #FAQ-card #left-side {
+    margin-top: 0px;
+  }
+  #FAQ-card #left-side #img-woman-container {
+    -webkit-transform: translateX(22%);
+            transform: translateX(22%);
+    width: 100%;
+    margin: 0px auto;
+  }
+  #FAQ-card #left-side #img-woman-container #img-woman {
+    height: 190px;
+    width: 230px;
+  }
+  #FAQ-card #left-side #img-box-container {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #FAQ-card #left-side #img-box-container #img-box {
+    -webkit-transform: translate(40%, 120%);
+            transform: translate(40%, 120%);
+    width: 90px;
+    height: 90px;
+  }
+  #FAQ-card #right-side {
+    margin-top: 2rem;
+  }
+  #FAQ-card #right-side #FAQ-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #FAQ-card #right-side #FAQ-questions .question {
+    width: 260px;
+    padding: 2px 0px;
+  }
+  #FAQ-card #right-side #FAQ-questions .question p {
+    font-size: 10px;
+    line-height: 10px;
+  }
 }
 
 * {
@@ -70,8 +148,8 @@ body {
   display: flex;
   background: white;
   border-radius: 3%;
-  -webkit-box-shadow: 1px 5px 0px -10px black;
-          box-shadow: 1px 5px 0px -10px black;
+  -webkit-box-shadow: 1px 5px 30px -10px black;
+          box-shadow: 1px 5px 30px -10px black;
 }
 
 #FAQ-section #FAQ-card #img-bg-pattern-container {
@@ -158,5 +236,7 @@ body {
   max-width: 100%;
   font-size: 1.8rem;
   display: none;
+  -webkit-transition: display ease-in 1s;
+  transition: display ease-in 1s;
 }
 /*# sourceMappingURL=style.css.map */

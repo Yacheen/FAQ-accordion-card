@@ -16,12 +16,15 @@ const buttonImages = document.getElementsByClassName('question');
 
 
 //depending on which child you clicked, toggle text that will display: block in that li
+
 Array.from(buttonImages).forEach(button => {
     button.addEventListener('click', () => {
+        
         const allthepees = document.getElementsByTagName('p');
-
+        
         //check to see if an li is already selected
         if(button.querySelector('p').classList.contains('list-item-active')) {
+            
             button.querySelector('p').classList.toggle('list-item-active');
             button.querySelector('span').classList.toggle('list-item-text-active');
             button.querySelector('img').classList.toggle('arrow-button-rotator');
@@ -31,6 +34,7 @@ Array.from(buttonImages).forEach(button => {
         else {
             Array.from(allthepees).forEach(p => {
                 if(p.classList.contains('list-item-active')) {
+                    
                     p.classList.remove('list-item-active');
                     p.previousElementSibling.classList.remove('arrow-button-rotator');
                     p.previousElementSibling.previousElementSibling.classList.remove('list-item-text-active');

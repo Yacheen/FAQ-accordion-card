@@ -4,7 +4,9 @@
   cursor: pointer;
 }
 .item:hover {
-  color: hsl(14, 88%, 65%);
+  span {
+    color: hsl(14, 88%, 65%);
+  }
 }
 li img {
   height: 30px;
@@ -23,4 +25,5 @@ li img {
 }
 .arrow-button-rotator {
   transform: rotate(180deg);
+  transition: all ease-in 0.2s;
 }
