@@ -1,0 +1,56 @@
+@media screen and (max-width: 768px) {
+  body {
+    overflow: hidden;
+  }
+  #FAQ-card {
+    flex-direction: column;
+    justify-content: center;
+    max-width: 90vw;
+    max-height: 70vh;
+
+    #img-bg-pattern-container {
+      #img-bg-pattern {
+        display: none;
+      }
+    }
+
+    #left-side {
+      margin-top: 0px;
+      #img-woman-container {
+        transform: translateX(25%);
+        width: 100%;
+        margin: 0px auto;
+
+        #img-woman {
+          height: 160px;
+          width: 200px;
+        }
+      }
+      #img-block-container {
+        #img-block {
+          top: 30%;
+        }
+      }
+    }
+
+    #right-side {
+      margin-top: 10px;
+      position: relative;
+
+      #FAQ-header {
+        display: flex;
+        justify-content: center;
+      }
+      #FAQ-questions {
+        .question {
+          width: 300px;
+          padding: 2px 0px;
+          p {
+            font-size: 10px;
+            line-height: 10px;
+          }
+        }
+      }
+    }
+  }
+}
